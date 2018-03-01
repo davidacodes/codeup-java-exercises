@@ -1,14 +1,29 @@
+import java.util.Scanner;
+
+
 public class MethodsExercises {
     public static void main(String[] args) {
-
+        Scanner sc = new Scanner(System.in);
 
 //        System.out.println(add(3,4));
 //        System.out.println(sub(3,4));
 //        System.out.println(multiplication(3,4));
 //        System.out.println(division(6,2));
 //        System.out.println(modulus(6,4));
-        System.out.println(mult(3, 4));
-        System.out.println(multRecursion(3, 4));
+//        System.out.println(mult(3, 4));
+//        System.out.println(multRecursion(3, 4));
+
+        String keepGoing;
+        long numb;
+
+        do {
+            System.out.print("Factorial - Please pick a number from 1 to 10: ");
+            numb = sc.nextLong();
+            System.out.format("%s = %d %n", factorString(numb), factorial(numb));
+            System.out.print("Would you like to try another? y/n ");
+            keepGoing = sc.next();
+        } while (keepGoing.equals("y"));
+
 
     }
 
@@ -60,18 +75,33 @@ public class MethodsExercises {
 
 // 2. Validate user input is in a certain range.
 
-    public static int getInteger(int min, int max) {
+//    public static int getInteger(int min, int max) {
+//
+//    }
 
+
+
+
+
+
+// 3. Calculate the factorial of anumber.
+
+
+    public static long factorial(long num) {
+        long output = 1;
+        for (long i = 1; i < num; i++ ) {
+            output = output * i;
+        }
+        return output;
     }
 
-
-
-
-
-
-
-
-
+    public static String factorString(long num) {
+        String output = num + "! = ";
+        for (long i = 1; i < num; i++) {
+            output = output + i + " x ";
+        }
+        return output + num;
+    }
 
 
 
