@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class GroceryListMain {
@@ -34,6 +35,9 @@ public class GroceryListMain {
                         searchForItem();
                         break;
                     case 6:
+                        processArrayList();
+                        break;
+                    case 7:
                         quit = true;
                         break;
                 }
@@ -81,6 +85,17 @@ public class GroceryListMain {
                     System.out.println(searchItem + " , not on file");
                 }
             }
+
+            public static void processArrayList() {
+                ArrayList<String> newArray = new ArrayList<String>();
+                newArray.addAll(groceryList.getGroceryList());
+
+//                ArrayList<String> newArray = new ArrayList<String>(groceryList.getGroceryList());
+
+//                String[] myArray = new String[groceryList.getGroceryList().size()];
+//                myArray = groceryList.getGroceryList().toArray(myArray);
+            }
+
 
 
 }
