@@ -1,5 +1,7 @@
+package mobilephone;
+
 public class Contact {
-//
+
 //    private String name;
 //    private String phoneNumber;
 //
@@ -16,8 +18,8 @@ public class Contact {
 //        return phoneNumber;
 //    }
 //
-//    public static Contact createContact(String name, String phoneNumber) {
-//        return new Contact(name, phoneNumber);
+//    public static mobilephone.Contact createContact(String name, String phoneNumber) {
+//        return new mobilephone.Contact(name, phoneNumber);
 //    }
 }
 

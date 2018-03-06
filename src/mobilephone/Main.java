@@ -1,12 +1,14 @@
+package mobilephone;
+
 import java.util.Scanner;
 
-public class MobliePhone {
+public class Main {
 
 //    private static Scanner scanner = new Scanner(System.in);
-//    private static Phone phone = new Phone("210 501 9610");
+//    private static mobilephone.MobilePhone phone = new mobilephone.MobilePhone("210 501 9610");
 //
 //
-//    public static void main(String[] args) {
+//    public static void Main(String[] args) {
 //
 //
 //        // Create a program that implements a simple mobile phone with the following capabilites.
@@ -63,7 +65,66 @@ public class MobliePhone {
 //        }
 //    }
 //
-//    private static void addNewContact()
+//    private static void addNewContact() {
+//        System.out.println("Enter new contact name: ");
+//        String name = scanner.nextLine();
+//        System.out.println("Enter phone number:");
+//        String phone = scanner.nextLine();
+//        Contact newContact = Contact.createContact(name, phone);
+//        if(phone.addNewContact(newContact)) {
+//            System.out.println("New contact added: " + name + ", phone = " + phone);
+//        } else {
+//            System.out.println("Cannot add, " + name + " already on file");
+//        }
+//    }
+//
+//    private static void updateContact() {
+//        System.out.println("Enter existing contact name: ");
+//        String name = scanner.nextLine();
+//        Contact existingContactRecord = phone.queryContact(name);
+//        if(existingContactRecord == null) {
+//            System.out.println("Contact not found.");
+//            return;
+//        }
+//        System.out.println("Enter new contact name: ");
+//        String newName = scanner.nextLine();
+//        System.out.println("Enter new contact phone number: ");
+//        String newNumber = scanner.nextLine();
+//        Contact newContact = Contact.createContact(newName, newNumber);
+//        if (phone.updateContact(existingContactRecord, newContact)) {
+//            System.out.println("Successfully updated record");
+//        } else {
+//            System.out.println("Error updating record");
+//        }
+//    }
+//
+//    private static void removeContact() {
+//        System.out.println("Enter existing contact name: ");
+//        String name = scanner.nextLine();
+//        Contact existingContactRecord = phone.queryContact(name);
+//        if (existingContactRecord == null) {
+//            System.out.println("Contact not found.");
+//            return;
+//        }
+//
+//       if (phone.removeContact(existingContactRecord)) {
+//           System.out.println("Successfully deleted");
+//       } else {
+//           System.out.println("Error deleting contact");
+//       }
+//    }
+//
+//    private static void queryContact() {
+//        System.out.println("Enter existing contact name: ");
+//        String name = scanner.nextLine();
+//        Contact existingContactRecord = phone.queryContact(name);
+//        if (existingContactRecord == null) {
+//            System.out.println("Contact not found.");
+//            return;
+//        }
+//        System.out.println("Name: " + existingContactRecord.getName() + " phone number is " + existingContactRecord.getPhoneNumber());
+//    }
+//
 //
 //
 //    private static void startPhone(){

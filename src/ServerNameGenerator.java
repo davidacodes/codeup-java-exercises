@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class ServerNameGenerator {
 
     private static Scanner scanner = new Scanner(System.in);
+    private static Random rand = new Random();
 
     public static void main(String[] args) {
 
@@ -33,7 +34,6 @@ public class ServerNameGenerator {
         }
 
        private static int rand() {
-            Random rand = new Random();
             int n = rand.nextInt(9) + 1;
             return n;
         }

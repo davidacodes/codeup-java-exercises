@@ -11,7 +11,7 @@ public class StringExercise {
         String copyPaste = "Check \"this\" out!, \"s inside of \"s!";
         System.out.println(copyPaste);
 
-        String windows = "In windows, the main drive is usually C:\\";
+        String windows = "In windows, the Main drive is usually C:\\";
         System.out.println(windows);
 
         String slashes = "I can do backslashes \\, double backslashes \\\\,\n" +
