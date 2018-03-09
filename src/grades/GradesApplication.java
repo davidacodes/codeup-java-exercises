@@ -11,7 +11,6 @@ public class GradesApplication {
         HashMap<String, Student> students = new HashMap<>();
 
 
-
         System.out.println((char)27 + "[31m" + "Welcome to the grader tool thingy!");
         students = gitClass();
 

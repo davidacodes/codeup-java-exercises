@@ -29,5 +29,7 @@ public class InputTest {
         doubleInRange = input.getDouble(1.1,9.9,"Input any number between 1.1 and 9.9");
 
         System.out.println(doubleInRange);
+
+
     }
 }

@@ -11,12 +11,19 @@ public class Input {
     }
 
     public String getString() {
-        return scan.next();
+        String userString = scan.nextLine();
+        return userString;
     }
+
+    public String getString(String prompt) {
+        System.out.println(prompt);
+        return getString();
+    }
+
 
     public boolean yesNo() {
         String userInput = getString();
-        if(userInput.equalsIgnoreCase("y") || userInput.equalsIgnoreCase("y")) {
+        if(userInput.equalsIgnoreCase("y") || userInput.equalsIgnoreCase("yes")) {
             return true;
         } else {
             return false;
@@ -29,7 +36,15 @@ public class Input {
     }
 
     public int getInt() {
-        return scan.nextInt();
+        try{
+            int input = Integer.valueOf(getString());
+            return input;
+        }catch(NumberFormatException e){
+            System.out.println(e.getMessage());
+            System.out.println("That's not an integer! Try again.");
+            return getInt();
+        }
+//        return scan.nextInt();
     }
 
     public int getInt(String prompt) {
@@ -52,8 +67,18 @@ public class Input {
     }
 
     public double getDouble() {
-        return scan.nextDouble();
+        try{
+            double input = Double.valueOf(getString());
+            return input;
+        }catch(NumberFormatException e) {
+            System.out.println(e.getMessage());
+            System.out.println("That's not a double! Try again.");
+            return getDouble();
+        }
+//        return scan.nextDouble();
     }
+
+
 
     public double getDouble(String prompt) {
         System.out.println(prompt);
@@ -73,5 +98,11 @@ public class Input {
         System.out.println(prompt);
         return getDouble(min, max);
     }
+
+    public int getHex() {
+        String userInput = scan.next();
+        return Integer.valueOf(userInput, 16)
+    }
+
 
 }
