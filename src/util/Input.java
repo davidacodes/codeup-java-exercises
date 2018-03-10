@@ -101,7 +101,7 @@ public class Input {
 
     public int getHex() {
         String userInput = scan.next();
-        return Integer.valueOf(userInput, 16)
+        return Integer.valueOf(userInput, 16);
     }
 
 
