@@ -42,5 +42,7 @@ public class Student {
         student.addGrades(70);
 
         System.out.println(student.getGradeAverage());
+
+
     }
 }
