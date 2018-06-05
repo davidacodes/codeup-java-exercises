@@ -72,7 +72,7 @@ public class Input {
             return input;
         }catch(NumberFormatException e) {
             System.out.println(e.getMessage());
-            System.out.println("That's not a double! Try again.");
+            PrettyPrinter.red("That's not a double!");
             return getDouble();
         }
 //        return scan.nextDouble();
